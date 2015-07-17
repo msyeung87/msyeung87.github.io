@@ -1,10 +1,86 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-	<title></title>
+	<meta charset="UTF-8">
+	<title>Matt's Black Jack</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+	<link rel="stylesheet" href="styles.css">
+	<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Fredericka+the+Great' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	<h1>
-		HELLO
-	</h1>
+	<header>
+		<img id="blackjacklogo" src="images/blackjack_logo.png">
+	</header>
+	<img id="blackjacktable" src="images/blackjacktable.png">
+	<div class="row" id="dealer-hand">
+		<div class="one column" id="dealer-card1">
+			dealer card1
+		</div>
+		<div class="two columns" id="dealer-card2">
+			dealer card2
+		</div>
+		<div  class="two columns"id="dealer-card3">
+			dealer card3
+		</div>
+		<div class="four columns" id="dealer-card4">
+			dealer card4
+		</div>
+	</div>
+	<div class="row" id="player-hand">
+		<div class="one column" id="player-card1">
+			player card1
+		</div>
+		<div class="two columns" id="player-card2">
+			player card2
+		</div>
+		<div class="three columns" id="player-card3">
+			player card3
+		</div>
+		<div class="four columns" id="player-card4">
+			player card4
+		</div>
+	</div>
+	<div class="hit-stand">
+		<button id="hit">Hit</button>
+		<button id="stand">Stand</button>
+	</div>
+
+	<div class="player-cash">
+		<input id="input-bet" type="text" name="user" placeholder="Place Bet Here">
+		<button id="bet-button">Place Bet</button>
+		<h2 id>Cash</h2>
+		<div class="player-balance">$1000</div>
+	</div>
+	<div class="bet-total">
+		<h2>Bet total</h2>
+		<div class="player-bet">$0</div>
+	</div>
+
+	<button id="modal-button">Basic Rules</button>
+	<div id="modal">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h3 id="game-rules">Game Rules</h3>
+			</div>
+			<div class="modal-body">
+				<img src="images/gamerules.png">
+			</div>
+		</div>
+	</div>
+
+	<div id="clear-button">
+		<INPUT TYPE="button" onClick="history.go(0)" VALUE="Clear Bet">
+	</div>
+
+
+
+
+
+	<footer>
+		<p>&copy;2015 Matt Yeung.</p>
+	</footer>
+	<script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,125 @@
+body {
+	background-color: #164B00;
+	text-align: center;
+}
+header {
+	text-align: center;
+}
+#blackjacklogo{
+	width: 30%;
+}
+#blackjacktable{
+	width: 90%;
+	border: 2px solid #868223;
+}
+#modal-button{
+	position: absolute;
+	top: 350px;
+	left: 150px;
+	background-color: #730505;
+	color: #B4B102;
+	border: 1px dotted #B4B102;
+	font-family: 'Fredericka the Great', cursive;
+}
+#modal{
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: none;
+	width: 100px;
+	height: 100px;
+	background-color: #164B00;
+
+}
+.modal-content {
+	position: absolute;
+	margin: 10px 30px;
+	background-color: #164B00;
+}
+.modal-header{
+	position: absolute;
+	background-color: #164B00;
+	width: 200px;
+	font-size: 30px;
+	color: #868223;
+}
+.modal-body{
+	position: absolute;
+	text-align: center;
+	width: 140px;
+	height: 240px;
+	top: 40px;
+	left: 40px;
+	background-color: #164B00;
+	border: 2px solid #868223;
+}
+#game-rules{
+	font-family: 'Fredericka the Great', cursive;
+}
+#dealer-hand{
+	position: absolute;
+	top: 340px;
+	left: 450px;
+}
+#player-hand{
+	position: absolute;
+	top: 670px;
+	left: 450px;
+}
+.hit-stand{
+	position: absolute;
+	top: 800px;
+	left: 550px;
+}
+.player-cash {
+	position: absolute;
+	top: 730px;
+	left: 130px;
+	color: #868223;
+	font-family: 'Fredericka the Great', cursive;
+}
+.bet-total{
+	position: absolute;
+	top: 590px;
+	left: 190px;
+	color: #868223;
+	font-family: 'Fredericka the Great', cursive;
+}
+.player-bet{
+	font-size: 40px;
+}
+.player-balance {
+	font-size: 40px;
+	color: #868223;
+	font-family: 'Fredericka the Great', cursive;
+}
+#bet-button{
+	color: #868223;
+	font-family: 'Fredericka the Great', cursive;
+}
+#hit {
+	background-color: #295B22;
+	color: #868223;
+	font-family: 'Fredericka the Great', cursive;
+}
+#stand {
+	background-color: #7E2C2F;
+	color: #868223;
+	font-family: 'Fredericka the Great', cursive;
+}
+
+#clear-button{
+	position: absolute;
+	left: 340px;
+	top: 790px;
+}
+
+
+
+
+
+
+footer{
+	color: white;
+	font-size: 10px;
+}

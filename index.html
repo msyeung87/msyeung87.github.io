@@ -16,67 +16,48 @@
 	<img id="blackjacktable" src="images/blackjacktable.png">
 	<div class="row" id="dealer-hand">
 		<div class="one column" id="dealer-card1">
-			dealer card1
 		</div>
 		<div class="two columns" id="dealer-card2">
-			dealer card2
 		</div>
 		<div  class="two columns"id="dealer-card3">
-			dealer card3
 		</div>
 		<div class="four columns" id="dealer-card4">
-			dealer card4
 		</div>
 	</div>
 	<div class="row" id="player-hand">
 		<div class="one column" id="player-card1">
-			player card1
 		</div>
 		<div class="two columns" id="player-card2">
-			player card2
 		</div>
 		<div class="three columns" id="player-card3">
-			player card3
 		</div>
 		<div class="four columns" id="player-card4">
-			player card4
 		</div>
 	</div>
 	<div class="hit-stand">
-		<button id="hit">Hit</button>
-		<button id="stand">Stand</button>
+		<button id="hit" class="button-primary gameActive">Hit</button>
+		 <!-- <button id="hit" type="button" onClick="hitMe()">Hit</button> -->
+		<button id="stand" class="button-primary gameActive">Stand</button>
 	</div>
-
 	<div class="player-cash">
 		<input id="input-bet" type="text" name="user" placeholder="Place Bet Here">
-		<button id="bet-button">Place Bet</button>
+		<button id="bet-button" class="button-primary gameInactive">Place Bet</button>
 		<h2 id>Cash</h2>
-		<div class="player-balance">$1000</div>
+		<div id="player-balance" class="player-balance">$1000</div>
 	</div>
 	<div class="bet-total">
 		<h2>Bet total</h2>
-		<div class="player-bet">$0</div>
+		<div id="player-bet" class="player-bet">$0</div>
 	</div>
-
-	<button id="modal-button">Basic Rules</button>
-	<div id="modal">
-		<div class="modal-content">
-			<div class="modal-header">
-				<h3 id="game-rules">Game Rules</h3>
-			</div>
-			<div class="modal-body">
-				<img src="images/gamerules.png">
-			</div>
-		</div>
+	<div>
+		<button id="deal-card">Deal</button>
+		<div id="deck-count">52</div>
 	</div>
+	<div id="dealer-value"></div>
+	<div id="player-value"></div>
+	
 
-	<div id="clear-button">
-		<INPUT TYPE="button" onClick="history.go(0)" VALUE="Clear Bet">
-	</div>
-
-
-
-
+	<audio id="jazz-music" src="./media/jazzmusic.mp3" autoplay Loop></audio>
 
 	<footer>
 		<p>&copy;2015 Matt Yeung.</p>
